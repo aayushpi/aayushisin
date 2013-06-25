@@ -11,26 +11,26 @@ $.fn.preload = function() {
 
 $(window).load(function(){
   var image = [
-  {
-    "title": "Adam's Peak, Sri Lanka",
-    "image_src": "./img/bg_adamspeak.jpg",
-    "color": "white"
-  },
-  {
-    "title": "Kargil Highway, India",
-    "image_src": "./img/bg_kargil.jpg",
-    "color": "white"
-  },
+  // {
+  //   "title": "Adam's Peak, Sri Lanka",
+  //   "image_src": "./img/bg_adamspeak.jpg",
+  //   "color": "white"
+  // },
+  // {
+  //   "title": "Kargil Highway, India",
+  //   "image_src": "./img/bg_kargil.jpg",
+  //   "color": "white"
+  // },
   {
     "title": "Moab, USA",
     "image_src": "./img/bg_moab.jpg",
     "color": "#F03838"
-  },
-  {
-    "title": "San Francisco, USA",
-    "image_src": "./img/bg_sf.jpg",
-    "color": "white"
   }
+  // {
+  //   "title": "San Francisco, USA",
+  //   "image_src": "./img/bg_sf.jpg",
+  //   "color": "white"
+  // }
 ];
   var random_entry = image[Math.floor(Math.random() * image.length)];
 
