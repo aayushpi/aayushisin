@@ -11,11 +11,11 @@ $.fn.preload = function() {
 
 $(window).load(function(){
   var image = [
-  // {
-  //   "title": "Adam's Peak, Sri Lanka",
-  //   "image_src": "./img/bg_adamspeak.jpg",
-  //   "color": "white"
-  // },
+  {
+    "title": "Adam's Peak, Sri Lanka",
+    "image_src": "./img/bg_adamspeak.jpg",
+    "color": "white"
+  },
   // {
   //   "title": "Kargil Highway, India",
   //   "image_src": "./img/bg_kargil.jpg",
