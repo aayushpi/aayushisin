@@ -16,6 +16,12 @@ $(window).load(function(){
     "image_src": "./img/bg_adamspeak.jpg",
     "color": "white"
   },
+  {
+    "title": "Alchi Monastery, India"
+    "image_src": "./img/bg_alchi.jpg",
+    "color": "#FO3838"
+  },
+
   // {
   //   "title": "Kargil Highway, India",
   //   "image_src": "./img/bg_kargil.jpg",
