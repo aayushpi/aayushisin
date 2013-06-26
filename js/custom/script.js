@@ -17,7 +17,7 @@ $(window).load(function(){
     "color": "white"
   },
   {
-    "title": "Alchi Monastery, India"
+    "title": "Alchi Monastery, India",
     "image_src": "./img/bg_alchi.jpg",
     "color": "#FO3838"
   },
