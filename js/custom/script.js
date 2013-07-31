@@ -3,6 +3,7 @@
  */
 (function($) {
 
+
 $.fn.preload = function() {
     this.each(function(){
         $('<img/>')[0].src = this;
@@ -94,6 +95,31 @@ $("h1, #me").hover(
 );
 $('#me').click(function(){
   resume();
+});
+
+$('#work').click(function(){
+  $('#container').fadeIn(750);
+  // $('#container').masonry({
+  //   columnWidth: 184,
+  //   gutter: 10,
+  //   isAnimated: true,
+  //   animationOptions: {
+  //     duration: 750,
+  //     easing: 'linear',
+  //     queue: false
+  //   },
+  //   itemSelector: '.item'
+  // });
+  $('#container').masonry({
+  columnWidth: 184,
+  gutter: 10,
+  "isFitWidth": true,
+  itemSelector: '.item'
+  });
+    $('html,body').animate({
+      scrollTop: $("#container").offset().top},
+      '500', function(){
+    });
 });
 $('h1').click(function(){
   resume();

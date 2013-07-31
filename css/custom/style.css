@@ -93,6 +93,11 @@ h1 a, h1 a:visited{
   max-width: 977px;
   display: none;
 }
+
+#container{
+  margin: 0 auto;
+  display: none;
+}
 .sans{
   text-transform: uppercase;
 }
@@ -161,6 +166,22 @@ h1 a, h1 a:visited{
     text-align: center;
 }
 
+.item{
+  margin-bottom: 10px;
+}
+.item h2 {
+    cursor: default;
+    font-family: 'atrament-web';
+    text-transform: uppercase;
+    font-size: 2em;
+    padding: 0;
+    width: 100%;
+    text-align: center;
+    padding-bottom: 10px;
+    margin: 0;
+    box-shadow: 1px 1.732px 5px 0 rgba( 0, 0, 0,0.27 );
+}
+
 /* ==========================================================================
    Media Queries
    ========================================================================== */
@@ -182,7 +203,39 @@ h1 a, h1 a:visited{
   }
 }
 
+.isotope-item {
+  z-index: 2;
+}
 
+.isotope-hidden.isotope-item {
+  pointer-events: none;
+  z-index: 1;
+}
 
+/**** Transitions ****/
 
+.masonry,
+.masonry .masonry-brick {
+  -webkit-transition-duration: 0.7s;
+     -moz-transition-duration: 0.7s;
+      -ms-transition-duration: 0.7s;
+       -o-transition-duration: 0.7s;
+          transition-duration: 0.7s;
+}
+
+.masonry {
+  -webkit-transition-property: height, width;
+     -moz-transition-property: height, width;
+      -ms-transition-property: height, width;
+       -o-transition-property: height, width;
+          transition-property: height, width;
+}
+
+.masonry .masonry-brick {
+  -webkit-transition-property: left, right, top;
+     -moz-transition-property: left, right, top;
+      -ms-transition-property: left, right, top;
+       -o-transition-property: left, right, top;
+          transition-property: left, right, top;
+}
 
